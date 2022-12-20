@@ -1,0 +1,315 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  background: #212523;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+nav .menu{
+  display: flex;
+}
+
+nav .logo a h1{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav .menu .menu-nav a{
+  display: block;
+  color: white;
+  padding: 20px 30px;
+  font-size: 18px;
+}
+
+.menu-home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 95px 0px 25px 0px;
+}
+
+.menu-home img{
+  border-radius: 50%;
+  height: 253px;
+  width: 270px;
+}
+
+.menu-home h1{
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.menu-home p{
+  font-size: 20px;
+}
+
+.menu-about{
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+hr.split{
+  width: 300px;
+  height: 2px;
+  background: black;
+  margin: 10px 0px;
+}
+
+.menu-about .text{
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.quote{
+  text-align: center;
+  margin: 30px;
+}
+
+.menu-about .text p{
+  width: 900px;
+  margin: 0px 40px;
+  font-size: 18px;
+}
+
+.menu-skill .text {
+  width: 900px;
+  margin: 0px 40px;
+  font-size: 18px;
+
+}
+.menu-gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 25px 0px;
+}
+
+.menu-gallery .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu-gallery .card{
+  width: 350px;
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 0px 0px 5px 0px;
+}
+
+.menu-gallery .card img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-gallery .card p{
+  color: black;
+  padding: 10px;
+}
+
+.container-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.container-contact form{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contact form label{
+  margin-top: 10px;
+}
+
+.container-contact form input{
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.container-contact form textarea{
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.container-contact form button{
+  width: 70px;
+  background: #337AB7;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+footer{
+  background: #343A40;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+body > input{
+  visibility: hidden;
+  position: absolute;
+}
+
+nav label{
+  display: none;
+}
+
+@media (max-width: 1200px){
+  .menu-about .text{
+    margin: 5px;
+  }
+  .menu-about .text p{
+    width: 900px;
+    margin: 10px 10px;
+  }
+  .menu-gallery .card{
+    width: 450px;
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 992px){
+  nav .menu .menu-nav a{
+    padding: 20px 15px;
+  }
+  .menu-about .text p{
+    width: 800px;
+  }
+  .menu-gallery .cards{
+    flex-direction: column;
+  }
+  .menu-gallery .card{
+    width: 750px;
+  }
+  .container-contact form{
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px){
+  nav .menu{
+    display: none;
+  }
+  nav .menu-bar, nav .cross{
+    display: block;
+    padding: 17px 0px;
+    cursor: pointer;
+  }
+  nav .menu-bar span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 6px;
+  }
+  nav .cross span:nth-child(1){
+    display: block;
+    width: 30px;
+    height: 4px;
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+    margin-top: -2px;
+    background: red;
+  }
+  nav .cross span:nth-child(2){
+    display: block;
+    width: 30px;
+    height: 4px;
+    transform-origin: 0 100%;
+    transform: rotate(-45deg);
+    margin-top: 17px;
+    background: red;
+  }
+  input#open:checked ~ nav .menu-bar{
+    display: none;
+  }
+  input#close:checked ~ nav .cross{
+    display: none;
+  }
+  input#open:checked ~ nav .menu{
+    display: flex;
+    position: fixed;
+    top: 57.2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .menu-about .text{
+    align-items: justify;
+  }
+  .menu-about .text p{
+    width: 94%;
+  }
+  .menu-gallery .card{
+    width: 94%;
+    margin: 20px auto;
+  }
+  .container-contact form{
+    width: 98%;
+  }
+  .container-contact form input, .container-contact form textarea{
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 576px){
+  .menu-home img{
+    height: 203px;
+    width: 220px;
+  }
+  .menu-home h1{
+    width: 95%;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .menu-home p{
+    width: 95%;
+    text-align: center;
+    font-size: 18px;
+  }
+  hr.split{
+    width: 200px;
+  }
+  .menu-education h1{
+    width: 95%;
+    text-align: center;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <input type="radio" name = "radio" id = "open">
+    <input type="radio" name = "radio" id = "close" checked>
+    <!-- nav -->
+    <nav>
+      <div class="logo">
+        <a href=""><h1>Diva Destia R</h1></a>
+      </div>
+      <div class="menu">
+        <div class="menu-nav"><a href="#home">Home</a></div>
+        <div class="menu-nav"><a href="#about">About</a></div>
+        <div class="menu-nav"><a href="#education">Education</a></div>
+        <div class="menu-nav"><a href="#skill">Skill</a></div>
+        <div class="menu-nav"><a href="#gallery">Gallery</a></div>
+        <div class="menu-nav"><a href="#contact">Contact</a></div>
+      </div>
+      <label for = "open" class="menu-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <label for="close" class = "cross">
+        <span></span>
+        <span></span>
+      </label>
+    </nav>
+
+    <!-- home -->
+    <div class="menu-home" id = "home">
+      <img src="img/profile.jfif" alt="">
+      <h1>Diva Destia Rohyadi</h1>
+      <p>Content Writer | Junior Web Developer</p>
+    </div>
+
+    <!-- about -->
+    <div class="menu-about" id = "about">
+      <h1>About</h1>
+      <hr class="split">
+      <div class="text">
+        <p>Hallo, saya adalah seorang Content Writer dan Junior Web Developer saat ini saya sedang menempuh Pendidikan Sarjana Sistem Informasi di STMIK Horizon Karawang, Saya sangat suka mempelajari mengenai Teknologi Ilmu Komputer.</p>
+      </div>
+      <div class="quote">
+        <h2>Quote</h2>
+        <p><blockquote>Lihat ke atas sebagai motivasi dan lihat ke bawah untuk selalu bersyukur.</blockquote></p>
+      </div>
+    </div>
+
+    <!--education-->
+    <div class="menu-about" id="education">
+      <h1>Education</h1>
+      <hr class="split">
+      <div class="text">
+        <table border="1" cellspacing="0" cellpadding="30px">
+            <tr class="table-color">
+              <td>Pendidikan</td>
+              <td>Tahun</td>
+            </tr>
+            <tr>
+              <td>SDN Pasirtalaga II</td>
+              <td>2011 - 2016</td>
+            </tr>
+            <tr>
+              <td>MTs.Ghoyatul Jihad</td>
+              <td>2016 - 2019</td>
+            </tr>
+            <tr>
+              <td>SMKS Teknologi</td>
+              <td>2019 - 2022</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+    
+    <!--SKill-->
+    <div class="menu-about" id = "skill">
+      <h1>Skill</h1>
+      <hr class="split">
+      <div class="text">
+       <ul>
+        <li>Mikrotik Configuration</li>
+        <li>Microsoft Word</li>
+        <li>Microsoft Excell</li>
+        <li>Computer Troubleshooting</li>
+        <li>Network Troubleshooting</li>
+        <li>Designer Grafis</li>
+        <li>Content Writer</li>
+        <li>Splicing Fiber Optic</li>
+        <li>Fiber To The Home (FTTH)</li>
+        <li>Network Topology Design</li>
+       </ul>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="menu-gallery" id = "gallery">
+      <h1>Gallery</h1>
+      <hr class="split">
+      <div class="cards">
+
+        <a href="">
+          <div class="card">
+            <img src="img/gambar1.jpeg" alt="">
+            <p>LDKM Subang.</p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="card">
+            <img src="img/gambar2.jpeg" alt="">
+            <p>Kelulusan SMK.</p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="card">
+            <img src="img/gambar3.jpeg" alt="">
+            <p>Masa masa SMK.</p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="card">
+            <img src="img/gambar4.jpeg" alt="">
+            <p>LDKM Subang.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="container-contact" id = "contact">
+      <h1>Contact</h1>
+      <hr class="split">
+
+      <form action="" method = "post">
+
+        <label for="">Name</label>
+        <input type="text" placeholder = "Yourname">
+
+        <label for="">Phone Number</label>
+        <input type="text" placeholder = "+628********">
+
+        <label for="">Email</label>
+        <input type="text" placeholder = "example@domainname.com">
+
+        <label for="">Message</label>
+        <textarea rows="8" cols="80" placeholder = "YourMessage"></textarea>
+
+        <button type = "submit">Send</button>
+      </form>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p>Copyright 2022 | Diva Destia Rohyadi</p>
+    </footer>
+  </body>
+</html>
